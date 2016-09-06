@@ -274,7 +274,7 @@ public Tutorial1() {
 		mop    = BregmanSoftClustering.run(points, mop);
 		out[1] = NMI(points, f, mop);
 		
-		// Estimation of the mixture of Poisson
+		// Estimation of the mixture of Binomial
 		MixtureModel mob;
 		mob    = BregmanSoftClustering.initialize(clusters, new BinomialFixedN(100));
 		mob    = BregmanSoftClustering.run(points, mob);

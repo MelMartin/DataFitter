@@ -2,14 +2,15 @@ package Tutorials;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 import java.util.Vector;
 
 import Tools.ExpectationMaximization1D;
 import Tools.KMeans;
-import jMEF.*;
+import jMEF.BregmanSoftClustering;
+import jMEF.MixtureModel;
+import jMEF.PVector;
+import jMEF.UnivariateGaussian;
 
 public class Tutorial2 {
 
@@ -22,9 +23,9 @@ public class Tutorial2 {
 
 		// Display
 		String title = "";
-		title += "+----------------------------------------+\n";
-		title += "| Bregman soft clustering & classical EM |\n";
-		title += "+----------------------------------------+\n";
+		title += "+---------------------------------------------+\n";
+		title += "| EM Gauss Fitter | (with K-means verification)\n";
+		title += "+---------------------------------------------+\n";
 		System.out.print(title);
 
 		// Variables
